@@ -64,3 +64,4 @@ IMPORTANT NOTE: As we are using a sandbox domain for email sending, you won't be
 to receive the password reset email unless you confirm your email as an authorized recipient.
 In order to do that, just send me an email and I'll do it in a while: rodrigovidal05@gmail.com
 
+Extra notes: This site is responsive, so feel free to test it in your smartphone or tablet!
