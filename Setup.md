@@ -34,7 +34,22 @@ test the project. Run the migrations and seeders with the following command:
 
 php artisan migrate --seed
 
-8) Serve the project to test it:
+8) Depending on your environment, you may need to give the right permissions to the following folders:
+
+/storage
+/bootstrap/cache
+
+In order to do that, if you're in Apache, you can run:
+
+sudo chown -R $USER:www-data storage
+sudo chown -R $USER:www-data bootstrap/cache
+
+And now:
+
+chmod -R 775 storage
+chmod -R 775 bootstrap/cache
+
+9) Serve the project to test it:
 
 php artisan serve
 
