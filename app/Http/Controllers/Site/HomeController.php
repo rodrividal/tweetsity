@@ -12,7 +12,7 @@ class HomeController extends Controller
 
     public function index(Request $request)
     {
-        $entries = Entry::withUserInfo()->orderBy('updated_at', 'DESC')->dateFormat()->paginate(5);
+        $entries = Entry::withUserInfo()->orderBy('updated_at', 'DESC')->paginate(5);
         $lastJoinedUsers = User::lastJoined()->select(array('id', 'name', 'surname', 'twitter_username', 'created_at'))->get();
 
         return view('home', compact('entries', 'lastJoinedUsers'));
