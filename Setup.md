@@ -1,5 +1,11 @@
 Steps to deploy this project:
 
+Requirements:
+- PHP >= 7.2
+- MySQL
+- Apache
+- Composer (We'll give you a link during this explanation)
+
 1) Clone the repository. Run in your terminal the following command:
 
 git clone https://github.com/rodrividal/tweetsity.git
